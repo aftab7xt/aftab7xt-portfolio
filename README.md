@@ -10,4 +10,4 @@
 * **DeenBase** – Islamic Android app. Quran, Hadith (35,000+), and daily Dhikr. Built with Kotlin.
 
 ### **Contact**
-Available for inquiries via **Fiverr**.
+Available for inquiries via [**Fiverr**](https://www.fiverr.com/aftaballi).
