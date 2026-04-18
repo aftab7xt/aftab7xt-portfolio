@@ -29,12 +29,57 @@ export default function HomeScreen() {
 
       <main className="max-w-5xl mx-auto px-6 py-12">
         <h2 className="text-sm font-bold tracking-[0.2em] text-blue-500 uppercase mb-8">Selected Work</h2>
+        
+        {/* Project Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <ProjectCard 
             title="DeenBase"
             description="Islamic Android app — Quran, Hadith (35,000+), and daily Dhikr. Built with Kotlin and Jetpack Compose."
             tags={["Kotlin", "Jetpack Compose", "Room DB", "Material 3"]}
           />
+        </div>
+
+        {/* GitHub Link */}
+        <div className="mt-10">
+          <a 
+            href="https://github.com/aftab7xt" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="inline-flex items-center gap-2 text-lg font-medium text-gray-200 hover:text-white transition-colors"
+          >
+            View all projects on GitHub
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+
+        {/* Work in Progress Placeholder */}
+        <div className="mt-32 mb-16 flex flex-col items-center justify-center opacity-70">
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="64" 
+            height="64" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="1.5" 
+            strokeLinecap="round" 
+            strokeLinejoin="round" 
+            className="mb-6 text-gray-300"
+          >
+            <path d="M12 12H5a2 2 0 0 0-2 2v5"></path>
+            <circle cx="13" cy="19" r="2"></circle>
+            <circle cx="5" cy="19" r="2"></circle>
+            <path d="M8 19h3"></path>
+            <path d="M15 19h3v-7a2 2 0 0 0-2-2h-3v9Z"></path>
+            <path d="M12 12V6a2 2 0 0 1 2-2h3"></path>
+            <path d="M22 19v-4"></path>
+            <path d="M22 22v-3"></path>
+          </svg>
+          <h3 className="text-3xl font-bold tracking-tight text-white">Work in progress</h3>
         </div>
       </main>
 
